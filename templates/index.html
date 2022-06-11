@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Từ điển Anh Việt, Việt Anh, Anh Anh</title>
+  <meta name="keywords" content="tu dien, tra tu, dictionary, translate, tu dien anh viet, tu dien viet anh" />
+  <link href="https://stc-laban.zdn.vn/dictionary/images/favicon.ico" rel="shortcut icon" />
+  <link rel="search" type="application/opensearchdescription+xml" title="Laban Dictionary"
+    href="https://stc-laban.zdn.vn/dictionary/xml/open-search.xml" />
+  <link rel="stylesheet" type="text/css" href="https://stc-laban.zdn.vn/dictionary/css/styles-1.11.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://stc-laban.zdn.vn/dictionary/css/autocomplete-1.03.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script type="text/javascript" src="https://stc-laban.zdn.vn/dictionary/js/jquery.min.js"></script>
+  <script type="text/javascript" src="https://stc-laban.zdn.vn/dictionary/js/jquery.autocomplete-1.01.min.js"></script>
+  <style>
+    .poweredby{
+      display: none;
+    }
+    #lbdict_plugin_frame iframe{
+      width: 100% !important;
+    }
+    .bg-image {
+      position: fixed;
+      width: 100%;
+      /* The image used */
+      background-image: url("https://wallpaperaccess.com/full/3485307.jpg");
+    
+      /* Add the blur effect */
+      filter: blur(8px);
+      -webkit-filter: blur(8px);
+    
+      /* Full height */
+      height: 100%; 
+    
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <div class="bg-image"></div>
+  <!-- begin: Body site -->
+  <div class="wrapper" style="width: 660px;">
+    <div style="margin: 50px auto 0;
+    text-align: center;">
+      <h2 style="line-height: 3em;
+      text-shadow: 3px 1px white;"
+      >Tra cứu từ điển Anh - Việt</h2>
+      <div id="che" style="
+        display: none;
+        width: 100%;
+        height: 50px;
+        position: absolute;
+        top: 698px;
+        z-index: 999999;
+        background: white;
+        "></div>
+      <div id="lbdict_plugin_frame">
+      </div>
+    </div>
+  </div>
+  <!-- END FOOTER -->
+  <script type="text/javascript">
+    ! function () {
+      var h = {
+        s: "https://dict.laban.vn",
+        w: 660,
+        h: 660,
+        hl: 2,
+        th: 3
+      };
+
+      function loadScript(t, e) {
+        var n = document.createElement("script");
+        n.type = "text/javascript", n.readyState ? n.onreadystatechange = function () {
+          ("loaded" === n.readyState || "complete" === n.readyState) && (n.onreadystatechange = null, e())
+        } : n.onload = function () {
+          e()
+        }, n.src = t, q = document.getElementById("lbdict_plugin_frame"), q.parentNode.insertBefore(n, q)
+      }
+      setTimeout(function () {
+        loadScript("https://stc-laban.zdn.vn/dictionary/js/plugin/lbdictplugin.frame.min.js", function () {
+          lbDictPluginFrame.init(h)
+        })
+      }, 1e3);
+    }();
+  </script>
+  <script>
+    var e = setInterval(()=>{
+      if($("iframe").length > 0){ 
+        $("iframe").css("width", "100%").css("border-radius","20px");
+        $("#che").css("display","block");
+        clearInterval(e);
+      }
+    },1);
+  </script>
+</body>
+
+</html>
